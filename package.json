@@ -1,5 +1,8 @@
 {
     "main": "src/index.ts",
+    "scripts": {
+        "dev":"vitepress dev demo"
+    },
     "devDependencies": {
         "vitepress": "^1.0.0-alpha.4",
         "vue": "^3.2.37"
