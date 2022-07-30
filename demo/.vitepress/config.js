@@ -1,3 +1,4 @@
+import ejs_plugin from '../../src/markdown-plugin/ejs'
 
 export default {
 
@@ -8,8 +9,12 @@ export default {
 
   markdown: {
     theme: 'material-palenight',
-    lineNumbers: true
+    lineNumbers: true,
+    config: (md) => {
+      md.use(ejs_plugin)
+    }
   },
+
 
   themeConfig: {
     socialLinks: [
